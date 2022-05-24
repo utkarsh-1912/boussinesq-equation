@@ -1,0 +1,14 @@
+<%- include('header') %>
+<div class="box-container">
+<form action="/Circular" method="post">
+    <label for="Rad"><p>Radius of Circular Loaded Area</p>
+    <input type="text" name="Rad" id="Rad" placeholder="(in m)" required></label>
+    <label for="CorZ"><p>Depth</p> 
+    <input type="text" name="CorZ" id="CorZ" placeholder="(in m) " required></label>
+    <label for="loadI"><p>Load Intensity</p>
+    <input type="text" name="loadI" id="loadI" placeholder="(in N/m^2)"  required></label>
+    <button type="submit">Calculate</button>
+    <p style="font-size:13px ; padding : 5px">Z-Coordinate are from Point of Loading</p>
+</form>
+</div>
+<%- include('footer') %>

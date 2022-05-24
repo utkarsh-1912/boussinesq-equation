@@ -1,0 +1,15 @@
+<%- include('header') %>
+<div class="box-container">
+    <form action="/" method="post">
+        <label for="typeF"><p style="padding: 10px;">Type of Loading</p></label>
+
+    <select name="typeF" id="type">
+        <option value="">--Select--</option>
+        <option value="Linear">Linear</option>
+        <option value="Point">Point</option>
+        <option value="Circular">Circular</option>
+    </select>
+        <button type="submit">Next <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
+</div>
+<%- include('footer') %>

@@ -1,0 +1,16 @@
+<%- include('header') %>
+<div class="box-container">
+<form action="/Point" method="post">
+    <label for="CorX"><p>X-Coordinate</p>
+    <input type="text" name="CorX" id="CorX" placeholder="(in m)" required></label>
+    <label for="CorY"><p>Y-Coordinate</p> 
+    <input type="text" name="CorY" id="CorY" placeholder="(in m)" required></label>
+    <label for="CorZ"><p>Depth</p>
+    <input type="text" name="CorZ" id="CorZ" placeholder="(in m)" required></label>
+    <label for="loadI"><p>Load Intensity</p>
+        <input type="text" name="loadI" id="loadI" placeholder="(in N)" required></label>
+    <button type="submit">Calculate</button>
+    <p style="font-size:13px ; padding : 5px">X- , Y-  and Z-Coordinate are from Point of Loading</p>
+</form>
+</div>
+<%- include('footer') %>
